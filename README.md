@@ -1,6 +1,8 @@
 # dent
 By Morgan Aldridge <morgant@makkintosshu.com>
 
+[![Build Status](https://travis-ci.com/morgant/dent.svg?branch=master)](https://travis-ci.com/morgant/dent) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=DBY3R8ARLDELE&currency_code=USD&source=url)
+
 ## OVERVIEW
 
 `dent` is a small utility written in `bash` which indents the output of the command passed as a parameter.
