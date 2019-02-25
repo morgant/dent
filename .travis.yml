@@ -1,0 +1,8 @@
+language: bash
+install:
+    - curl -L https://github.com/bmizerany/roundup/tarball/v0.0.6 | tar xvzf -
+    - cd bmizerany-roundup-f526c39
+    - ./configure && make && sudo make install
+    - cd - && rm -R bmizerany-roundup-f526c39
+script:
+    - roundup 
