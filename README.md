@@ -1,7 +1,7 @@
 # dent
 By Morgan Aldridge <morgant@makkintosshu.com>
 
-[![Build Status](https://travis-ci.com/morgant/dent.svg?branch=master)](https://travis-ci.com/morgant/dent) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=DBY3R8ARLDELE&currency_code=USD&source=url)
+[![dent on OpenHub](https://www.openhub.net/p/dent/widgets/project_thin_badge.gif)](https://www.openhub.net/p/dent) [![Build Status](https://travis-ci.com/morgant/dent.svg?branch=master)](https://travis-ci.com/morgant/dent) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=DBY3R8ARLDELE&currency_code=USD&source=url)
 
 ## OVERVIEW
 
