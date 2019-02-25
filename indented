@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #
-# indent - indent the output of command
+# indented - indent the output of command
 #
 # CHANGE LOG:
 #
@@ -37,7 +37,7 @@ INDENT_CHAR="${INDENT_CHAR:-  }"
 INDENT_LEVEL="${INDENT_LEVEL:-0}"
 
 # indent the output of command
-function indent() {
+function indented() {
   (( INDENT_LEVEL++ ))
 
   local line
@@ -52,4 +52,4 @@ function indent() {
   return $?
 }
 
-indent "$@"
+indented "$@"
