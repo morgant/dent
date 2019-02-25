@@ -1,23 +1,23 @@
-# indented
+# dent
 By Morgan Aldridge <morgant@makkintosshu.com>
 
 ## OVERVIEW
 
-`indented` is a small utility written in `bash` which indents the output of the command passed as a parameter.
+`dent` is a small utility written in `bash` which indents the output of the command passed as a parameter.
 
 ## USAGE
 
-Prepend `indented` to any command:
+Prepend `dent` to any command:
 
-    indented echo "Hello world"
+    dent echo "Hello world"
 
 Output:
 
       Hello world
 
-Because `indented` increments `INDENT_LEVEL` prior to executing the command and decrements it upon completion, it inherently supports nested calls. So, if you have another command or function that itself calls `indented`, it's output will be further indented. For example:
+Because `dent` increments `DENT_LEVEL` prior to executing the command and decrements it upon completion, it inherently supports nested calls. So, if you have another command or function that itself calls `dent`, it's output will be further indented. For example:
 
-    indented indented echo "Hello world"
+    dent dent echo "Hello world"
 
 Output:
 
@@ -25,6 +25,6 @@ Output:
 
 ## ENVIRONMENT VARIABLES
 
-* `INDENT_CHAR` - The character(s) used to indent (default: '  ' [two spaces])
-* `INDENT_LEVEL` - The current indent level (default: `0`)
+* `DENT_CHAR` - The character(s) used to indent (default: '  ' [two spaces])
+* `DENT_LEVEL` - The current indent level (default: `0`)
 

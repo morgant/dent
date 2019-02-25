@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #
-# indented - indent the output of command
+# dent - indent the output of command
 #
 # CHANGE LOG:
 #
@@ -33,23 +33,23 @@
 #
 
 # environment variables
-INDENT_CHAR="${INDENT_CHAR:-  }"
-INDENT_LEVEL="${INDENT_LEVEL:-0}"
+DENT_CHAR="${DENT_CHAR:-  }"
+DENT_LEVEL="${DENT_LEVEL:-0}"
 
 # indent the output of command
-function indented() {
-  (( INDENT_LEVEL++ ))
+function dent() {
+  (( DENT_LEVEL++ ))
 
   local line
   while IFS= read -r line; do
-    for (( i=0; i<${INDENT_LEVEL}; i++ )); do
-      echo -n "${INDENT_CHAR}"
+    for (( i=0; i<${DENT_LEVEL}; i++ )); do
+      echo -n "${DENT_CHAR}"
     done
     echo "${line}"
   done <<< "$($@)"
 
-  (( indent_level-- ))
+  (( DENT_LEVEL-- ))
   return $?
 }
 
-indented "$@"
+dent "$@"
